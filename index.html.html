@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        /* Estilos del cuerpo */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            background-image: url("fondo de pagina.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .contenido {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 80%;
+            z-index: 1;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .skills, .contact {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .skills-images, .contact-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skills-images img, .contact-images img {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .sections-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* Imagen con bordes difusos a la izquierda */
+        .imagen-difusa {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50%; /* La imagen ocupa la mitad izquierda */
+            height: 100vh; /* La imagen ocupa toda la altura */
+            background-image: url("codigo en el espacio.jpg"); /* Imagen con bordes difusos */
+            background-size: cover;
+            background-position: center;
+            /* Difumina los bordes de manera más suave */
+            mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
+            -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%); /* Para Safari */
+            z-index: 0; /* Asegura que la imagen no cubra el contenido */
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen difusa a la izquierda -->
+    <div class="imagen-difusa"></div>
+
+    <!-- Contenido principal de la página -->
+    <div class="contenido">
+        <img src="foto para web.jpeg" alt="Mi Imagen Central">
+        <h1>Alexis Ontiveros</h1>
+        <h2>About Me</h2>
+    </div>
+
+    <div class="contenido">
+        <p>
+            Soy de Argentina, estoy estudiando Ingeniería en Sistemas en la UTN Córdoba y actualmente trabajo como SA Operator.
+        </p>
+    </div>
+
+    <!-- Sección de Skills y Contact -->
+    <div class="sections-container">
+        <!-- Sección de Skills -->
+        <div class="skills">
+            <h2>Skills</h2>
+            <div class="skills-images">
+                <img src="pyhton.png" alt="Skill 1">
+                <img src="sql.png" alt="Skill 2">
+                <img src="Csharp.png" alt="Skill 3">
+                <img src="html.png" alt="Skill 4">
+            </div>
+        </div>
+
+        <!-- Sección de Contact -->
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-images">
+                <a href="https://www.linkedin.com/in/alexisontiveros/" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/alexisonti" target="_blank">
+                    <img src="GitHub.png" alt="GitHub">
+                </a>
+                <a href="alexis.ontiveros.tejada@gmail.com">
+                    <img src="gmail.png" alt="Email">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
